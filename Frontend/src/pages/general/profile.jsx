@@ -7,7 +7,7 @@ export default function Profile() {
     const [profile, setprofile] = useState([])
     const [videos, setvideos] = useState([])
     useEffect(() => {
-      axios.get(`http://localhost:3000/api/food-partner/${id}`,{withCredentials : true})
+      axios.get(`https://zomato-reel-fullstack-project-2.onrender.com/api/food-partner/${id}`,{withCredentials : true})
     .then((res)=>{
      setprofile(res.data.foodPartner)
      setvideos(res.data.foodPartner.foodItems)

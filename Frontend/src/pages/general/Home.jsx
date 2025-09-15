@@ -6,7 +6,7 @@ import { useNavigate,Link } from 'react-router-dom';
 export default function Home() {
   const [videos, setvideos] = useState([])
   useEffect(() => {
-    axios.get("http://localhost:3000/api/food",{withCredentials:true})
+    axios.get("https://zomato-reel-fullstack-project-2.onrender.com/api/food",{withCredentials:true})
     .then((res)=>{
       setvideos(res.data.foodItems)
     })

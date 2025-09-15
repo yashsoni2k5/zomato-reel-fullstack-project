@@ -33,7 +33,7 @@ export default function Create_food() {
     data.append("video", formData.video);
 
     try {
-      const res = await axios.post("http://localhost:3000/api/food", data, {
+      const res = await axios.post("https://zomato-reel-fullstack-project-2.onrender.com/api/food", data, {
         withCredentials: true,
       });
       console.log(res.data);
