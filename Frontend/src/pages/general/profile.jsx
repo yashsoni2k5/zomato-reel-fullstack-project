@@ -30,7 +30,7 @@ export default function Profile() {
         <h2 className="text-xl font-semibold text-gray-800">{profile?.name}</h2>
         <p className="text-sm text-gray-500">Address</p>
         <h2 
-          onClick={() => Navigate("/")}
+          onClick={() => Navigate("/home")}
           className="text-indigo-600 font-medium mt-1 cursor-pointer hover:underline"
         >
           Back

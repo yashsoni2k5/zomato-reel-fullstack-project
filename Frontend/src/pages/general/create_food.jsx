@@ -37,7 +37,7 @@ export default function Create_food() {
         withCredentials: true,
       });
       console.log(res.data);
-      Navigate("/")
+      Navigate("/home")
 
     } catch (error) {
       console.error(error.response?.data || error.message);
